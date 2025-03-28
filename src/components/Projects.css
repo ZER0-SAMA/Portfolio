@@ -1,0 +1,60 @@
+/* Projects Section */
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow:var(--shadow);
+   
+    /* box-shadow: 1px 1px 14px -8px black; */
+    /* transition: var(--transition); */
+    overflow: hidden;
+    width: 40vh;
+    height: 50vh;
+    position: relative;
+    cursor: pointer;
+  }
+
+
+
+  .project-card:hover .project-hover.one{
+    top:0;
+    color:black;
+}
+ 
+
+.project-icon{
+    
+}
+/* .project-hover  {
+   
+    background-color: blueviolet;
+    border:1px solid green;
+    position: absolute ;
+    left:0;
+    top:0;
+
+} */
+
+.project-hover.one  {
+    width: 40vh;
+    height: 50vh;
+    background-color:var(--primary-color-opacity);
+
+    position: absolute ;
+    left:0;
+    top:-100%;
+    transition: top 1s ;
+    /* opacity: 50%; */
+    color:black;
+}
+p{color: black;}

@@ -1,0 +1,23 @@
+.about-content{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 80vh;
+    width:100%;
+}
+.about-box-1{
+    /* border: 1px solid green; */
+    height: 100%;
+    width: 80%;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow:var(--shadow);
+}
+.about-box-2{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow:var(--shadow);
+}
