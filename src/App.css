@@ -1,0 +1,231 @@
+:root {
+  --primary-color: #3a86ff;
+  --primary-color-opacity: #3a86ffa6;
+  --secondary-color: #8338ec;
+  --secondary-color-opacity: #8338ec;
+  --text-color: #333;
+  --bg-color: #f8f9fa;
+  --card-bg: #fff;
+  /* --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  --shadow: 1px 1px 5px 0px black;
+  --transition: all 0.3s ease;
+}
+
+.dark {
+  --primary-color: #4cc9f0;
+  --primary-color-opacity: #4cc9f0a6;
+  --secondary-color: #f72585;
+  --text-color: #f8f9fa;
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  /* --shadow: 0 4px 6px rgba(0, 0, 0, 0.3); */
+  --shadow: -3px -3px 8px -7px white ,3px 3px 8px 0px black;
+ 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;s
+}
+
+.nav-links li {
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+
+.nav-links li.active {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100px;
+  margin:0px 100px 0px 200px;
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  padding: 6rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+.section-active{
+  /* animation: sectionAnimation 0.5s ease; */
+  transition-duration: 1s;
+  transition-delay: 1s
+}
+@keyframes sectionAnimation{
+  from{ transform: scale(0,0);}
+  to{ transform: scale(1,1);}
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Home Section */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+  color: var(--secondary-color);
+}
+
+.cursor-indicator {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hero-content p {
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin: 0 auto;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+
+
+/* Skills Section */
+/* .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+} */
+
+/* Contact Section */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.contact-form textarea {
+  min-height: 150px;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card-bg);
+}
