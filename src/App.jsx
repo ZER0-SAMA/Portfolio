@@ -44,7 +44,9 @@ function App() {
 
   const handleNavigation = (section) => {
     setActiveSection(section);
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById(section)
+      ?.scrollIntoView({ block: "center", behavior: "smooth" });
   };
   useEffect(() => {
     document
@@ -90,7 +92,7 @@ function App() {
       >
         <div className="hero-content">
           <h1>
-            Hi, I'm <span className="highlight">Alex</span>
+            Hi, I'm <span className="highlight">Nikhil</span>
           </h1>
           <h2>
             <span className="typing-text">{typingText}</span>
