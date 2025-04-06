@@ -3,7 +3,7 @@ import "./AboutMe.css";
 import Resume from "../assets/resume.pdf";
 import portfolio_resume from "../assets/portfolio_resume.png";
 // import FileViewer from "react-file-viewer";
-import DocViewer from "react-doc-viewer";
+// import DocViewer from "react-doc-viewer";
 export default function AboutMe() {
   const docs = [
     { uri: Resume }, // Local File
