@@ -1,6 +1,7 @@
 :root {
   --primary-color: #3a86ff;
-  --primary-color-opacity: #3a86ffa6;
+/* #3a86ffa6 */
+  --primary-color-opacity: #3a86ffe6;
   --secondary-color: #8338ec;
   --secondary-color-opacity: #8338ec;
   --text-color: #333;
@@ -15,7 +16,7 @@
 
 .dark {
   --primary-color: #4cc9f0;
-  --primary-color-opacity: #4cc9f0a6;
+  --primary-color-opacity: #4cc9f0e6;
   --secondary-color: #f72585;
   --text-color: #f8f9fa;
   --bg-color: #121212;

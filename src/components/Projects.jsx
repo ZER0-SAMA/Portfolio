@@ -3,7 +3,7 @@ import Peer from "../assets/peer2.png";
 import "./Projects.css";
 export default function Projects() {
   const [activeCard, setActiveCard] = useState(false);
-  const projects = [{ title: "RandomChat", url: "", gitHub: "" }];
+  const projects = [{ title: "Random Friend", url: "", gitHub: "" }];
 
   // const mouseHover = () => {
   //   console.log("MouseHover");
@@ -29,14 +29,21 @@ export default function Projects() {
             // }}
           >
             <div className="project-hover one">
-              <h3>Project {title}</h3>
-              <p style={{ color: "red", opacity: "100%" }}>
-                Description of project{" "}
+              <p style={{ color: "black", opacity: "100%", fontSize: "large" }}>
+                Built a 1-on-1 video chat platform using WebRTC and Socket.io
+                for real-time communication and instant matchmaking. Designed a
+                responsive React.js frontend with Figma, enabling smooth user
+                interactions and fast, random pairing in under 2 seconds.
               </p>
+              <button
+                style={{ borderRadius: "5px", width: "150px", outline: "none" }}
+              >
+                Try Now
+              </button>
             </div>
             <div className="project-icon">
+              <h1>Random Friend</h1>
               <img src={Peer} alt={"RandomChat"} />
-              <button>Try Now</button>
             </div>
           </div>
         ))}
